@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --color-campaign-green: #006A4E;
+  --color-campaign-red: #F42A41;
+  --color-campaign-gray: #F8F9FA;
+  --color-campaign-dark: #070D19;
+}
+
+/* Apple & Stripe Style Premium Custom Utilities */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.dark .glass-panel {
+  background: rgba(7, 13, 25, 0.75);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.stripe-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.15;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #070D19;
+}
+::-webkit-scrollbar-thumb {
+  background: #006A4E;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F42A41;
+}
